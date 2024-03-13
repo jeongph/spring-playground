@@ -1,12 +1,12 @@
 package me.jeongph.playground.object;
 
-public record Kilogram(
-        double value
+public record Gram(
+        int value
 ) {
 
-    public static final String UNIT = "kg";
+    public static final String UNIT = "g";
 
-    public Kilogram {
+    public Gram {
         if (value < 0) {
             throw new IllegalArgumentException("질량은 0 이상이어야 합니다.");
         }
